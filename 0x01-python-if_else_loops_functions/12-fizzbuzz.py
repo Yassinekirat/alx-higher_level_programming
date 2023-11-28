@@ -8,4 +8,4 @@ for num in range(1, 101):
         print("Buzz ", end="")
     else:
         print("{}".format(num), end=" ")
-print(" $")
+print("")
