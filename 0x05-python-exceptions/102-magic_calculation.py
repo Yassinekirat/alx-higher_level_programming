@@ -9,7 +9,6 @@ def magic_calculation(a, b):
             else:
                 result += a ** b / i
         except ValueError as ve:
-            print(f"Exception: {ve}")
             result = b + a
             break
     return result
