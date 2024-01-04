@@ -62,6 +62,7 @@ class Rectangle:
             string += "\n"
 
         return string
+
     def __repr__(self) -> str:
         """representation method"""
         ghlid = f"Rectangle({self.width}, {self.height})"
