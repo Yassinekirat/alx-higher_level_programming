@@ -50,7 +50,7 @@ class Rectangle:
 
     def __str__(self) -> str:
         """Return the rectangle"""
-        if self.perimeter == 0:
+        if self.width == 0 or self.height == 0:
             return ""
 
         string = ""
