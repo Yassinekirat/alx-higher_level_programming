@@ -66,4 +66,3 @@ class Rectangle:
         """representation method"""
         ghlid = f"Rectangle({self.width}, {self.height})"
         return ghlid
-
