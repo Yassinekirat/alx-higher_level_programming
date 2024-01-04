@@ -70,5 +70,5 @@ class Rectangle:
 
     def __del__(self):
         """shinra tensei"""
-        print("Bye rectangle...")
         Rectangle.number_of_instances = Rectangle.number_of_instances - 1
+        print("Bye rectangle...")
