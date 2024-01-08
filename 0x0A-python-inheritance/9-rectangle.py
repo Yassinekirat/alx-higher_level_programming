@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """Class Rectangle"""
+
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+
+"""Rectangle child class"""
 
 
 class Rectangle(BaseGeometry):
@@ -18,5 +22,5 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        """Return a string describing the rectangle: [Rectangle] <width>/<height>"""
+        """Return a string describing the rectangle"""
         return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"
