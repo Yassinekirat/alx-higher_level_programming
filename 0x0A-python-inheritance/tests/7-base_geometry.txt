@@ -2,7 +2,7 @@
 
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("name", "John")
+>>> bg.integer_validator("name", True)
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -13,3 +13,8 @@ ValueError: age must be greater than 0
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", True)
+Traceback (most recent call last):
+TypeError: name must be an integer
