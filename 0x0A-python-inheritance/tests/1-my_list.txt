@@ -1,39 +1,34 @@
->>> MyListist = __import__('1-my_Listist').MyListist
+>>> MyList = __import__('1-my_list').MyList
 
->>> List = MyListist()
->>> print(List)
-[]
->>> List.append(-2)
->>> List.append(-7)
->>> List.append(-9)
->>> List.append(-5)
->>> print(List)
-[-2, -7, -9, -5]
->>> List.print_sorted()
-[-9, -7, -5, -2]
->>> print(List)
-[-2, -7, -9, -5]
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.append(4)
+>>> my_list.append(9)
+>>> my_list.append(5)
+>>> my_list.append(6)
+>>> my_list.append(3)
+>>> print(my_list)
+[1, 2, 4, 9, 5, 6, 3]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5, 6, 9]
+>>> print(my_list)
+[1, 2, 4, 9, 5, 6, 3]
 
->>> issubcListass(MyListist, Listist)
-True
+>>> my_list = MyList()
+>>> my_list.append(-10)
+>>> my_list.append(-2)
+>>> my_list.append(0)
+>>> my_list.append(10)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[-10, -2, 0, 2, 10]
 
->>> List = MyListist()
->>> List.print_sorted()
-[]
->>> print(List)
-[]
->>> List.print_sorted()
-[]
+>>> my_list = MyList()
+>>> my_list.append(4)
+>>> my_list.print_sorted()
+[4]
 
->>> my_Listist = MyListist()
->>> my_Listist.append(1)
->>> my_Listist.append(4)
->>> my_Listist.append(2)
->>> my_Listist.append(3)
->>> my_Listist.append(5)
->>> print(my_Listist)
-[1, 4, 2, 3, 5]
->>> my_Listist.print_sorted()
-[1, 2, 3, 4, 5]
->>> print(my_Listist)
-[1, 4, 2, 3, 5]
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
