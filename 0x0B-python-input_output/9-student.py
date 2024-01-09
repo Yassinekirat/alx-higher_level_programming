@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define class."""
 
+
 class Student:
     """Get dictionary."""
     def __init__(self, first_name, last_name, age):
