@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists states matching a given name"""
+"""Lists cities of a given state"""
 
 import MySQLdb
 from sys import argv
@@ -20,9 +20,10 @@ if __name__ == "__main__":
                INNER JOIN states ON cities.state_id = states.id
                WHERE states.name = %s"""
     cursor.execute(query, (state_name,))
-    matching_states = cursor.fetchall()
+    state_cities = cursor.fetchall()
 
-    for row in matching_states:
-        print(row)
+    cities_list = [city[1] for city in state_cities]
+
+    print(', '.join(cities_list))
 
     db_connection.close()
