@@ -22,5 +22,4 @@ if __name__ == "__main__":
     for row in n_starting_states:
         print(row)
 
-    cursor.close()
     db_connection.close()
